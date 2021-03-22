@@ -1,0 +1,13 @@
+{
+  "name": "typescript-vigil-reporter",
+  "version": "1.0.0",
+  "description": "Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.",
+  "main": "index.js",
+  "repository": "https://github.com/NikoGrano/typescript-vigil-reporter",
+  "author": "Niko Granö <niko@granö.fi>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^14.14.35"
+  }
+}
