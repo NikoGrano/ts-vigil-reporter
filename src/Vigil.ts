@@ -48,7 +48,7 @@ export default class Vigil {
                 this.client.delete((s) => {
                     console.log(s ? 'Replica flushed!' : 'Failed to flush replica!');
                     return s;
-                })
+                });
             }
 
             return true;
@@ -84,8 +84,8 @@ export default class Vigil {
             replica: this.replica(),
             interval: this.options.interval,
             load: {
-                cpu: ((os.loadavg()[0] || 0) / (os.cpus().length || 1)).toPrecision(2),
-                ram: ((heap.total_heap_size || 0.0) / (heap.heap_size_limit || 1.0)).toPrecision(2)
+                cpu: parseFloat(((os.loadavg()[0] || 0) / (os.cpus().length || 1)).toPrecision(2)),
+                ram: parseFloat(((heap.total_heap_size || 0.0) / (heap.heap_size_limit || 1.0)).toPrecision(2))
             }
         }
         const payload = JSON.stringify(data);
