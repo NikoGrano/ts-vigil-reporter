@@ -1,6 +1,6 @@
 {
   "name": "ts-vigil-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.",
   "main": "dist/Vigil.js",
   "types": "dist/Vigil.d.ts",
