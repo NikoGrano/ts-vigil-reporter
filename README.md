@@ -26,18 +26,18 @@ $ yarn add ts-vigil-reporter
 `vigil-reporter` can be instantiated as such:
 
 ```typescript
-import Vigil from "./Vigil";
+import Vigil from "ts-vigil-reporter";
 
 const client: Vigil = new Vigil({
     url: 'https://status.example.com',  // `page_url` from Vigil `config.cfg`
     token: 'YOUR_SECRET_TOKEN',         // `reporter_token` from Vigil `config.cfg`
     probe: 'relay',                     // Probe ID containing the parent Node for Replica
     node: 'socket-client',              // Node ID containing Replica
-    replica: '10.44.0.5',               // Unique Replica ID for instance. **Optional**
-    interval: 30,                       // Reporting interval. **Optional**
-    debug: false,                       // Enable console.log debug. **Optional**
-    timeout: 10,                        // Timeout connecting Vigil server. **Optional**                    
-    headers: {'X-Proxy-Auth': '1234'}   // Custom HTTP headers to be sent Vigil. **Optional**
+    replica: '10.44.0.5',               // Unique Replica ID for instance. Default REPLICA_MODE_HOSTNAME. **Optional**
+    interval: 30,                       // Reporting interval. Default 30. **Optional**
+    debug: false,                       // Enable console.log debug. Default false. **Optional**
+    timeout: 10,                        // Timeout connecting Vigil server. Default 10. **Optional**                    
+    headers: {'X-Proxy-Auth': '1234'}   // Custom HTTP headers to be sent Vigil. Default {}. **Optional**
 });
 ```
 
