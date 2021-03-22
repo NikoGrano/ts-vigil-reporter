@@ -1,5 +1,5 @@
 {
-  "name": "typescript-vigil-reporter",
+  "name": "vigil-reporter-ts",
   "version": "1.0.0",
   "description": "Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.",
   "main": "index.js",
