@@ -14,9 +14,9 @@ Include `vigil-reporter-ts` in your `package.json` dependencies.
 Alternatively, you can install it via the package manager cli.
 
 ```shell script
-$ npm install vigil-reporter-ts --save
+$ npm i ts-vigil-reporter
 // Or if you prefer Yarn 
-$ yarn add vigil-reporter-ts
+$ yarn add ts-vigil-reporter
 ```
 
 ## How to use?
