@@ -65,7 +65,7 @@ export default class HttpClient {
             r.setEncoding('utf-8');
             if(r.statusCode === 200) {
                 this.log('Request succeeded.');
-                return next(true);
+                next(true);
             }
 
             this.log('Request failed: ' + r.statusCode);
